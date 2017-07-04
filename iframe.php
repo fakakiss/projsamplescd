@@ -1,0 +1,1 @@
+<iframe width="800" height="600" border="0" src="incs/register_t_s3.php?<?php echo rand();?>"></iframe>

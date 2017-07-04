@@ -1,0 +1,8 @@
+#homeFeature {width: 100%;}
+.feature h3 {font-size: 30px; margin: 0 0 5px;}
+.feature p {font-size: 14px; line-height: 17px;}
+.featureNav li {font-size: 13px; min-height: 33px;}
+.featureNav li.current {font-size: 14px; font-weight: bold; min-height: 0}
+.feature blockquote p {font-size: 21px; line-height: 25px;}
+
+

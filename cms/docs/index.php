@@ -1,0 +1,135 @@
+<?php
+	require('../../lib_files/private.inc.php');
+	require('../../lib_files/settings.inc.php');
+	require('settings.inc.php');
+	
+    $q = "select * from docs order by name asc";
+    $rst = mysqli_query($conn,$q) or die(mysqli_error($conn));
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//Dtd html 4.0 transitional//EN">
+<html>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<head>
+<title><?php echo $clientname;?> | <?php echo $manager;?> | Listing</title>
+</head>
+
+<body>
+
+<?php cmshead($privite_site_width,$privite_nav_width,$_sess_username,$_user_rights)?>
+
+
+		  
+		  <div style="padding:10px">
+		  
+		 <?php top_module($manager,$add,$view,$viewcat,$addcat,$_sess_username,$_user_rights);?>
+					  
+					  
+					 
+					 
+					 
+					  <div  style="padding-top:10px; ">
+					    <table  border="0"  cellpadding="0" cellspacing="0" class="cms_text" >
+						
+                          <?php if(mysqli_num_rows($rst) > 0){while($row = mysqli_fetch_array($rst)){?>
+						  
+						  
+						 
+						  
+                             <tr> 
+                               <td valign="top"> 
+			  
+			  
+			 
+			  <table border="0" cellspacing="0" cellpadding="0"   class="cms_text">
+                  <tr>
+				
+		
+				 
+          <td width=60px valign="top" height="110px">
+		 
+	
+	     <?php if(($row['type'])=="application/pdf") { ?> 
+		  <img src="../cms_images/adobeico.gif" class="cms_image_border">
+		  <?php }?>
+		  
+		  <?php if(($row['type'])=="application/msword") { ?> 
+		  <img src="../cms_images/mswordico.gif" class="cms_image_border">
+		  <?php }?>
+		  
+		  <?php if(($row['type'])=="text/plain") { ?> 
+		  <img src="../cms_images/notepadico.gif" class="cms_image_border">
+		  <?php }?>
+		  
+		  <?php if(($row['type'])=="application/vnd.ms-powerpoint") { ?>  
+		  <img src="../cms_images/pptico.gif" class="cms_image_border">
+		  <?php }?>
+		  
+		  
+		  
+		  
+		  
+		  
+		  </td> 
+		  
+		  
+		  
+                    <td   valign="top" > 
+					
+					
+					<table   class="cms_text">
+					
+					        <tr><td>Name:</td><td><?php echo stripslashes($row['name'])?></td></tr>
+				
+							<?php if(!empty($row['size'])) { ?>        <tr><td> Size & Type: </td>  <td><?php echo $row['size']?> - <?php echo $row['type']?></td></tr><?php } ?>
+		                   
+							<?php if(!empty($row['caption'])) { ?>     <tr><td>Caption:</td>        <td><?php echo ucfirst($row['caption'])?></td></tr><?php } ?>    
+		            
+		                    <?php if(!empty($row['description'])) { ?> <tr><td>Description:</td>    <td><?php echo ucfirst($row['description'])?></td> </tr><?php } ?>
+		                   
+						   
+						   
+                          
+                           
+                  
+                  			   
+			               <tr>
+						   <td>
+                              <div class="readmore_bottoms" style="padding-top:5px; padding-bottom:20px">
+							   <a href="edit.php?id=<?php echo $row[0]?>">Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							   <a href="delete.php?id=<?php echo $row[0]?>">Delete</a>
+                              </div>
+                              </td>
+							  </tr>
+					  </table>
+					  
+					  
+					  
+					  
+					  
+					  
+						 
+                    </td>
+                   </tr>
+                </table>
+				
+				
+				</td>
+            </tr>
+
+			
+            <?php }}else{?>
+            <tr> <td  class="error">No Documents Uploaded.</td> </tr>
+            <?php }?>
+	
+
+          </table>
+						</div>
+						
+						</div>
+		  
+		            </td>
+  </tr></table>
+  
+  <?php cmsfooter()?>
+

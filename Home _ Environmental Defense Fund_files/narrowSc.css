@@ -1,0 +1,69 @@
+body {background-position: 50% 157px;}
+.pageWidth {width: 720px;}
+#header .pageWidth, #nav .pageWidth {width: 740px;}
+#header .logo {background-image: url(http://www.webkings/images/logoNarrow.jpg);}
+.actionFund #header .logo {background-image: url(http://www.webkings/images/logoActionFundNarrow.jpg);} 
+#nav .pageWidth {position: relative; -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.05); -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.05); box-shadow: 0 1px 0 rgba(0,0,0,0.05);}
+#nav .button {position: absolute; right: 308px; top: -64px;}
+#nav li a {padding: 16.5px 7px 17.5px 7px;}
+/*.flyoutTrigger {margin-right: 6px;}*/
+
+.flyout .pageWidth {width: 720px; margin-left: -370px !important;}
+.arrowContainer {top: 62px;}
+
+h1 {font-size: 30px; line-height: 37px; margin: 23px 0;}
+h2 {font-size: 24px; line-height: 30px; margin: 25px 0 20px;}
+h3, h4, h5 {font-size: 16px; line-height: 23px; margin: 25px 0 20px;}
+h3 { font-weight: bold; }
+
+#content > .pageWidth > .col22-2 .textField {width: 100px;}
+
+
+
+#homeFeature {width: 100%;}
+.feature h3 {font-size: 25px; margin: 0 0 3px;}
+.feature p {font-size: 14px; line-height: 17px;}
+.feature .button {font-size: 13px;}
+.featureRight {margin-bottom: 35px;}
+.featureNav li {font-size: 12px;}
+.featureNav li.current {font-size: 13px;}
+.feature blockquote p {font-size: 18px; line-height: 22px;}
+
+.col77-7 .feature .divider, .col66-6 .feature .divider {background-position: 57% 0;}
+.col77-7 .featureLeft, .col66-6 .featureLeft {width: 52.8%;}
+.col77-7 .featureRight, .col66-6 .featureRight {width: 38.6%;}
+.col77-7 .feature h3, .col66-6 .feature h3 {font-size: 19px;}
+.col77-7 .feature p, .col66-6 .feature p {font-size: 12px;}
+.col77-7 .feature blockquote p, .col66-6 .feature blockquote p {font-size: 14px; line-height: 16px;}
+.col77-7 .featureNav li, .col66-6 .featureNav li {font-size: 11px;}
+.col77-7 .featureNav li.current, .col66-6 .featureNav li.current {font-size: 12px;}
+.feature blockquote + h3.showH3 {margin-top: 5px;}
+
+
+
+
+
+.pair3070 dt, .pair3070 dd {float: none; width: 100%;}
+
+#content #campaignHeader {min-height: 115px;}
+.campaignNav > li > a {padding-left: 6px; padding-right: 6px;}
+.campaignNav ul a {padding-left: 6px; padding-right: 6px;}
+.campaignNav ul li + li {margin-left: 2px;}
+.campaignNav li {padding-right: 3px;}
+#campaignHeader .inlineLinks, #campaignHeader .plainList {display: none;}
+
+.socialPair li img {width: 80%;}
+
+#alert h2 {font-size: 25px;}
+#ActionAlertForm select, .ActionAlertForm select {width: 68% !important; height: 29px !important; position: absolute; top: -30px; left: 70px;}
+#ActionAlertForm #state .ActionAlertForm #state {width: 130% !important;}
+#ActionAlertForm #zip .ActionAlertForm #zip {width: 100% !important;}
+.pair3070 dt, .pair3070 dd {float: none; width: 100%; margin-bottom:15px;}
+.vdError {float: right;}
+.textF1 {width: 63% !important; position: absolute; top: -30px; left: 70px; float: none; padding-top: 0; height: 22px;}
+#ActionAlertForm .additional, .ActionAlertForm .additional {padding-left: 68px;}
+
+#footer .col25 img {height: auto; width: 100%;}
+
+#contentColumn .shareRow .inlineLinks li, .shareRow .inlineLinks li {padding-left: 0; margin-right: 1px !important; border:none;}
+.secondaryShare { width: 43% !important; }
